@@ -1,0 +1,39 @@
+# Maven / build output
+**/target/
+**/build/
+**/out/
+*.class
+dependency-reduced-pom.xml
+
+# IDEs / editors
+**/.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.classpath
+.project
+.settings/
+
+# OS / desktop
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local secrets: copy Server/src/main/resources/hibernate.properties.example
+# to hibernate.properties and fill in your own DB password
+**/hibernate.properties
+.env
+.env.*
+
+# Logs (including Log4j2 rolled *.log.gz archives)
+**/logs/
+*.log
+*.log.gz
+hs_err_pid*
+replay_pid*
+
+# Office temp/lock files (e.g. while Documentation.docx is open in Word)
+~$*
+*.tmp
+*.bak

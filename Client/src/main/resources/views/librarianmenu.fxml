@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<StackPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="proj.markrone.library.client.gui.controllers.LibrarianMenuController">
+
+    <VBox alignment="CENTER" spacing="20" maxWidth="Infinity" maxHeight="Infinity">
+        <Label styleClass="title">Меню библиотекаря</Label>
+
+        <Label fx:id="helloLabel">Добро пожаловать, </Label>
+
+        <Button fx:id="booksButton" onAction="#onBooksButton" text="Каталог книг" />
+        <Button fx:id="arrivalsButton" onAction="#onArrivalsButton" text="Поступления книг" />
+        <Button fx:id="bookCopiesButton" onAction="#onBookCopiesButton" text="Экземпляры книг" />
+        <Button fx:id="issuesButton" onAction="#onIssuesButton" text="Выдача и возврат книг" />
+        <Button fx:id="editInfoButton" onAction="#onEditInfoButton" text="Изменить данные" styleClass="button-secondary" />
+        <Button fx:id="exitButton" onAction="#onExitButton" text="Выйти из аккаунта" styleClass="button-danger" />
+    </VBox>
+
+    <HBox alignment="TOP_RIGHT" pickOnBounds="false" styleClass="menu-theme-overlay" StackPane.alignment="TOP_RIGHT">
+        <Button fx:id="themeToggleButton" onAction="#onThemeToggle" styleClass="icon-toggle-theme" />
+    </HBox>
+</StackPane>

@@ -1,0 +1,9 @@
+# Copy this file to hibernate.properties (same folder) and set your PostgreSQL password.
+# hibernate.properties is listed in .gitignore and must never be committed.
+# suppress inspection "UnusedProperty" for whole file
+hibernate.connection.driver_class=org.postgresql.Driver
+hibernate.connection.url=jdbc:postgresql://127.0.0.1:5432/Library
+hibernate.connection.username=postgres
+hibernate.connection.password=YOUR_POSTGRES_PASSWORD
+hibernate.show_sql=false
+hibernate.hbm2ddl.auto=update

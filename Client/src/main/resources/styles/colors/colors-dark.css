@@ -1,0 +1,52 @@
+
+.root {
+    /* Общий фон и текст */
+    -color-background: linear-gradient(to bottom right, #0f172a, #1e1b4b);
+    -color-text: #e2e8f0;
+
+    /* Разделители и границы */
+    -color-separator: #334155;
+    -color-border: #475569;
+    -color-border-focused: #818cf8;
+
+    /* Поля ввода */
+    -color-text-field: #e2e8f0;
+    -color-background-field: #1e293b;
+    -color-background-field-hover: #334155;
+
+    /* Кнопки */
+    -color-text-button: #ffffff;
+    -color-background-button: #6366f1;
+    -color-background-button-hover: #818cf8;
+    -color-background-button-pressed: #4f46e5;
+
+    /* Акцентные и семантические цвета */
+    -color-accent: #818cf8;
+    -color-accent-hover: #a5b4fc;
+    -color-secondary: #64748b;
+    -color-secondary-hover: #94a3b8;
+    -color-danger: #f87171;
+    -color-danger-hover: #fca5a5;
+
+    /* Таблица */
+    -color-header-background: #1e293b;
+    -color-header-text: #c7d2fe;
+    -color-row-hover: #334155;
+    -color-row-selected: #3730a3;
+    -color-text-selected: #ffffff;
+    -color-cell-background: #0f172a;
+
+    /* ComboBox */
+    -color-combobox-background: #1e293b;
+    -color-combobox-hover: #334155;
+    -color-combobox-focused-border: #818cf8;
+    -color-combobox-text: #e2e8f0;
+    -color-combobox-popup-bg: #1e293b;
+    -color-combobox-popup-hover: #334155;
+    -color-combobox-popup-selected: #3730a3;
+    -color-combobox-popup-text: #e2e8f0;
+
+    /* Панели и статус */
+    -color-surface-elevated: #1e293bcc;
+    -color-status-text: #94a3b8;
+}

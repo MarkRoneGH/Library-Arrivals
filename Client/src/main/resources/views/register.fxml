@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proj.markrone.library.client.gui.controllers.RegisterController">
+
+    <Label styleClass="title">Регистрация</Label>
+
+    <HBox styleClass="workflowHBox">
+        <StackPane styleClass="form-side-panel">
+            <VBox styleClass="buttonsVBox">
+                <HBox styleClass="registerHBox">
+                    <VBox styleClass="registerVBox">
+                        <TextField fx:id="usernameField" promptText="Введите имя пользователя *"/>
+                        <PasswordField fx:id="passwordField" promptText="Введите пароль *"/>
+                        <PasswordField fx:id="confirmPasswordField" promptText="Повторите пароль *"/>
+                    </VBox>
+
+                    <VBox styleClass="registerVBox">
+                        <TextField fx:id="firstNameField" promptText="Введите имя *"/>
+                        <TextField fx:id="lastNameField" promptText="Введите фамилию *"/>
+                        <TextField fx:id="patronymicField" promptText="Введите отчество"/>
+                    </VBox>
+                </HBox>
+            </VBox>
+        </StackPane>
+    </HBox>
+
+    <Button fx:id="registerButton" onAction="#onRegisterButton" text="Зарегистрироваться" styleClass="button-primary" />
+
+    <Button fx:id="backToLoginButton" onAction="#onBackToLoginButton" text="К авторизации" styleClass="button-secondary" />
+</VBox>

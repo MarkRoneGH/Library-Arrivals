@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proj.markrone.library.client.gui.controllers.IssuesController">
+
+    <Label fx:id="titleLabel" styleClass="title">Выдача и возврат книг</Label>
+
+    <ComboBox fx:id="issueFilterComboBox" promptText="Фильтр выдач" onAction="#onIssueFilter" />
+
+    <HBox styleClass="workflowHBox">
+        <StackPane styleClass="form-side-panel">
+            <VBox styleClass="buttonsVBox">
+                <Button fx:id="refreshButton" onAction="#onRefreshButton" text="Обновить список" styleClass="button-secondary" />
+                <Button fx:id="returnButton" onAction="#onReturnButton" text="Оформить возврат" styleClass="button-primary" />
+                <Region prefHeight="16" minHeight="16" maxHeight="16" />
+                <Label fx:id="issueFormLabel">Оформить выдачу:</Label>
+                <ComboBox fx:id="copyComboBox" promptText="Доступный экземпляр" />
+                <ComboBox fx:id="readerComboBox" promptText="Читатель" />
+                <DatePicker fx:id="dueDatePicker" promptText="Срок возврата" />
+                <Button fx:id="issueButton" onAction="#onIssueButton" text="Выдать книгу" styleClass="button-primary" />
+            </VBox>
+        </StackPane>
+
+        <StackPane styleClass="table-card">
+            <HBox.hgrow>
+                <Priority fx:constant="ALWAYS" />
+            </HBox.hgrow>
+            <TableView fx:id="issuesTable">
+                <columnResizePolicy>
+                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                </columnResizePolicy>
+                <columns>
+                    <TableColumn fx:id="idColumn" text="ID выдачи" />
+                    <TableColumn fx:id="bookTitleColumn" text="Книга" />
+                    <TableColumn fx:id="invColumn" text="Инв. номер" />
+                    <TableColumn fx:id="readerColumn" text="Читатель" />
+                    <TableColumn fx:id="dueColumn" text="Срок возврата" />
+                    <TableColumn fx:id="returnedColumn" text="Возврат" />
+                </columns>
+            </TableView>
+        </StackPane>
+    </HBox>
+
+    <Button fx:id="backToMenuButton" onAction="#onBackToMenuButton" text="В меню" styleClass="button-secondary" />
+</VBox>
